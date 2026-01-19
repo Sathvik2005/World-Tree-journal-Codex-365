@@ -17,6 +17,7 @@ Welcome to **World Tree — Codex 365**, an immersive journaling and creative wr
 - **Realms Exploration**: Journey through different realms including the Sky Realm, Midgard Realm, and Underworld Realm, each with unique visuals and interactions.
 - **Spirits and Creatures**: Encounter various mythical creatures and spirits that inhabit the world tree, each with their own stories and interactions.
 - **Journal Entries**: Keep track of your journey by creating journal entries and inscribing magical runes.
+- **Multilingual Support**: Write in 8 Indian languages - Hindi, Telugu, Bengali, Tamil, Sanskrit, Marathi, Urdu, and English with native script rendering.
 - **Cosmic Animations**: Enjoy stunning animations that enhance the mystical experience throughout the application.
 
 ## Project Structure

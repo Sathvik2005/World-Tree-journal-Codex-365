@@ -1,7 +1,7 @@
 {
   "name": "mythical-world-tree",
   "version": "1.0.0",
-  "description": "A project that visualizes a mythical world tree, integrating various realms, spirits, and mythical creatures.",
+  "description": "A multilingual journaling platform that visualizes a mythical world tree, supporting 8 Indian languages with rich literary heritage.",
   "main": "src/main.jsx",
   "scripts": {
     "dev": "vite",

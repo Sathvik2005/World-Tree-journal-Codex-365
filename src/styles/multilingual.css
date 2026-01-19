@@ -1,0 +1,355 @@
+/* Multilingual Typography Styles */
+
+/* Google Fonts for Indian Scripts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap');
+
+/* Language-Specific Typography */
+[lang="hi"],
+[lang="mr"],
+[lang="sa"] {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+}
+
+[lang="te"] {
+  font-family: 'Noto Sans Telugu', sans-serif;
+  line-height: 2;
+  letter-spacing: 0.01em;
+}
+
+[lang="bn"] {
+  font-family: 'Noto Sans Bengali', sans-serif;
+  line-height: 1.9;
+  letter-spacing: 0.01em;
+}
+
+[lang="ta"] {
+  font-family: 'Noto Sans Tamil', sans-serif;
+  line-height: 2;
+  letter-spacing: 0.01em;
+}
+
+[lang="ur"] {
+  font-family: 'Noto Nastaliq Urdu', serif;
+  direction: rtl;
+  text-align: right;
+  line-height: 2.2;
+  letter-spacing: 0.02em;
+}
+
+[lang="en"] {
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.7;
+}
+
+/* Font Size Adjustments for Complex Scripts */
+.text-devanagari {
+  font-size: 1.1em;
+}
+
+.text-telugu {
+  font-size: 1.15em;
+}
+
+.text-bengali {
+  font-size: 1.1em;
+}
+
+.text-tamil {
+  font-size: 1.15em;
+}
+
+.text-urdu {
+  font-size: 1.2em;
+}
+
+/* RTL Support */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .flex {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .text-left {
+  text-align: right;
+}
+
+[dir="rtl"] .text-right {
+  text-align: left;
+}
+
+/* Language Badge Styles */
+.language-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, rgba(88, 86, 214, 0.1) 0%, rgba(123, 66, 255, 0.1) 100%);
+  border: 1px solid rgba(88, 86, 214, 0.3);
+  transition: all 0.3s ease;
+}
+
+.language-badge:hover {
+  background: linear-gradient(135deg, rgba(88, 86, 214, 0.2) 0%, rgba(123, 66, 255, 0.2) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(88, 86, 214, 0.3);
+}
+
+/* Input Method Editor (IME) Support */
+.ime-active {
+  position: relative;
+}
+
+.ime-active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #5856d6, #7b42ff);
+  animation: ime-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes ime-pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+/* Script-Specific Optimizations */
+
+/* Devanagari (Hindi, Sanskrit, Marathi) */
+.script-devanagari {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Telugu */
+.script-telugu {
+  text-rendering: optimizeLegibility;
+  word-spacing: 0.05em;
+}
+
+/* Bengali */
+.script-bengali {
+  text-rendering: optimizeLegibility;
+  word-spacing: 0.05em;
+}
+
+/* Tamil */
+.script-tamil {
+  text-rendering: optimizeLegibility;
+  word-spacing: 0.1em;
+}
+
+/* Urdu/Nastaliq */
+.script-urdu {
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga" 1, "calt" 1;
+  word-spacing: 0.2em;
+}
+
+/* Language Switcher Dropdown */
+.language-dropdown {
+  position: relative;
+}
+
+.language-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  min-width: 280px;
+  background: rgba(20, 20, 40, 0.98);
+  border: 1px solid rgba(88, 86, 214, 0.3);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.language-option {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.language-option:last-child {
+  border-bottom: none;
+}
+
+.language-option:hover {
+  background: rgba(88, 86, 214, 0.2);
+}
+
+.language-option.active {
+  background: rgba(88, 86, 214, 0.3);
+  border-left: 3px solid #5856d6;
+}
+
+.language-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.language-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.language-name {
+  font-weight: 600;
+  color: #f0f0ff;
+  margin-bottom: 0.25rem;
+}
+
+.language-native-name {
+  font-size: 0.875rem;
+  color: rgba(240, 240, 255, 0.7);
+}
+
+/* Writing Prompt Cards */
+.prompt-card {
+  padding: 1rem;
+  background: linear-gradient(135deg, rgba(88, 86, 214, 0.1) 0%, rgba(123, 66, 255, 0.1) 100%);
+  border: 1px solid rgba(88, 86, 214, 0.2);
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.prompt-card:hover {
+  background: linear-gradient(135deg, rgba(88, 86, 214, 0.2) 0%, rgba(123, 66, 255, 0.2) 100%);
+  border-color: rgba(88, 86, 214, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(88, 86, 214, 0.3);
+}
+
+/* Literary Heritage Panel */
+.heritage-panel {
+  background: linear-gradient(135deg, rgba(123, 66, 255, 0.15) 0%, rgba(88, 86, 214, 0.15) 100%);
+  border: 1px solid rgba(123, 66, 255, 0.3);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.heritage-panel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #5856d6, #7b42ff, #5856d6);
+  animation: heritage-glow 3s ease-in-out infinite;
+}
+
+@keyframes heritage-glow {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+/* Word Counter for Complex Scripts */
+.word-counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(88, 86, 214, 0.2);
+  border-radius: 0.5rem;
+  font-weight: 600;
+  color: #5856d6;
+}
+
+.word-counter-label {
+  opacity: 0.7;
+  font-weight: 400;
+}
+
+/* Keyboard Shortcut Hint */
+kbd {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-family: monospace;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Loading State for Font Loading */
+.font-loading {
+  opacity: 0;
+  animation: fade-in 0.5s ease-in forwards;
+}
+
+@keyframes fade-in {
+  to { opacity: 1; }
+}
+
+/* Accessibility - High Contrast Mode */
+@media (prefers-contrast: high) {
+  .language-badge,
+  .prompt-card,
+  .heritage-panel {
+    border-width: 2px;
+  }
+  
+  .language-option:hover {
+    background: rgba(88, 86, 214, 0.4);
+  }
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  [lang="hi"], [lang="mr"], [lang="sa"],
+  [lang="te"], [lang="bn"], [lang="ta"] {
+    font-size: 16px;
+    line-height: 1.9;
+  }
+
+  [lang="ur"] {
+    font-size: 18px;
+    line-height: 2.3;
+  }
+
+  .language-dropdown-menu {
+    min-width: 100%;
+    max-height: 400px;
+  }
+
+  .heritage-panel {
+    padding: 1rem;
+  }
+}
+
+/* Print Styles for Multi-Script Documents */
+@media print {
+  [lang="hi"], [lang="mr"], [lang="sa"],
+  [lang="te"], [lang="bn"], [lang="ta"], [lang="ur"] {
+    font-size: 12pt;
+    line-height: 1.8;
+  }
+
+  .language-badge,
+  .language-dropdown,
+  .prompt-card {
+    display: none;
+  }
+}
