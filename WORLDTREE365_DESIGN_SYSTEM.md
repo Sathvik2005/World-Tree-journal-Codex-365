@@ -1,23 +1,28 @@
-# World Tree — 365 Design System
+# 🌳 World Tree — Codex 365 Design System
 
-## Brand Identity
-
-### Logo
-Custom SVG logo featuring:
-- Circle boundary (cosmic containment)
-- Stylized tree with branching lines
-- 36 dots representing 365 days (symbolic ring)
-- Star symbol above (guidance/destiny)
-- Minimal white linework on navy background
-
-**Files:**
-- SVG Component: `src/components/UI/WorldTreeLogo.jsx`
-- Includes breathing animation option
-- Scalable and responsive
+> *A mystical journaling ecosystem where science meets mythology*
 
 ---
 
-## Color Tokens
+## 🎨 Brand Identity
+
+### Logo Philosophy
+Our custom SVG logo embodies the essence of cyclical growth and cosmic connection:
+
+- **Circle Boundary** — Cosmic containment & infinite cycles
+- **Stylized Tree** — Growth, roots (past), branches (future)
+- **36 Dots** — Representing 365 days in symbolic harmony
+- **Star Symbol** — Guidance, destiny, and enlightenment
+- **Minimal Linework** — White on navy for mystical elegance
+
+**Implementation Files:**
+- 📄 SVG Component: `src/components/UI/WorldTreeLogo.jsx`
+- ✨ Features: Breathing animation, scalable, fully responsive
+- 🎭 Usage: Hero sections, navigation, branding
+
+---
+
+## 🎨 Color Palette
 
 ### Primary Colors
 ```css

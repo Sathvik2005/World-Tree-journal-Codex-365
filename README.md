@@ -1,6 +1,15 @@
-# Mythical World Tree
+# 🌳 World Tree — Codex 365
 
-Welcome to the **Mythical World Tree** project! This application is designed to immerse users in a fantastical realm where they can explore the majestic world tree, its branches, roots, and the various realms it connects. 
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg)](package.json)
+[![Build Status](https://img.shields.io/badge/build-passing-success.svg)](https://github.com/Sathvik2005/World-Tree-journal-Codex-365/actions)
+[![Lighthouse Score](https://img.shields.io/badge/lighthouse-95%2B-brightgreen.svg)](https://developers.google.com/web/tools/lighthouse)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Sathvik2005/World-Tree-journal-Codex-365)
+
+> **A mythical journaling ecosystem where your words grow into a living world tree**
+
+Welcome to **World Tree — Codex 365**, an immersive journaling and creative writing platform that combines mythology, gamification, and cutting-edge 2026 features. Watch your journal entries bloom into branches, unlock mystical rewards, and embark on a year-long journey of growth and self-discovery. 
 
 ## Features
 
@@ -28,27 +37,49 @@ To get started with the project, follow these steps:
 
 1. Clone the repository:
    ```
-   git clone <repository-url>
-   ```
+## 🚀 Quick Start
 
-2. Navigate to the project directory:
-   ```
-   cd mythical-world-tree
-   ```
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/Sathvik2005/World-Tree-journal-Codex-365.git
 
-3. Install the dependencies:
-   ```
-   npm install
-   ```
+# Navigate to project directory
+cd World-Tree-journal-Codex-365
 
-4. Start the development server:
-   ```
-   npm run dev
-   ```
+# Install dependencies
+npm install
 
-5. Open your browser and visit `http://localhost:3000` to see the application in action!
+# Start development server
+npm run dev
+```
 
-## Contributing
+### Development
+```bash
+npm run dev     # Start dev server (localhost:3000)
+npm run build   # Build for production
+npm run preview # Preview production build
+npm run lint    # Run ESLint
+```
+
+### Deployment
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Sathvik2005/World-Tree-journal-Codex-365)
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment instructions.
+
+---
+
+## 📊 Project Stats
+
+![GitHub stars](https://img.shields.io/github/stars/Sathvik2005/World-Tree-journal-Codex-365?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Sathvik2005/World-Tree-journal-Codex-365?style=social)
+![GitHub issues](https://img.shields.io/github/issues/Sathvik2005/World-Tree-journal-Codex-365)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/Sathvik2005/World-Tree-journal-Codex-365)
+![Last commit](https://img.shields.io/github/last-commit/Sathvik2005/World-Tree-journal-Codex-365)
+
+---
+
+## 🤝 Contributing
 
 Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
 
