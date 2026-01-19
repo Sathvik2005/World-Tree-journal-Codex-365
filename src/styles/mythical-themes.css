@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: var(--bg-abyss, #0B1020);
+    color: var(--text-primary, #E5E7EB);
+    font-family: 'Garamond', serif;
+}
+
+h1, h2, h3 {
+    color: var(--text-glow, #ECFEFF);
+    text-shadow: var(--glow-soft-blue);
+}
+
+.tree-container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.tree-branches {
+    background: linear-gradient(to top, var(--green-deep), var(--green-mystic));
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: var(--glow-soft-green), inset 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.tree-roots {
+    background: linear-gradient(to bottom, var(--green-deep), var(--bg-forest));
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 8px 16px rgba(5, 7, 13, 0.6), inset 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.tree-canopy {
+    background: linear-gradient(to top, var(--green-mystic), var(--green-ethereal));
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: var(--glow-soft-green), 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.mythical-creature {
+    transition: transform 0.3s;
+}
+
+.mythical-creature:hover {
+    transform: scale(1.1);
+}
+
+.realm-portal {
+    border: 2px solid var(--cyan-rune);
+    border-radius: 50%;
+    padding: 12px;
+    box-shadow: var(--glow-rune);
+    transition: all 0.4s ease;
+}
+
+.realm-portal:hover {
+    box-shadow: 0 0 28px rgba(34, 211, 238, 0.8), 0 0 42px rgba(34, 211, 238, 0.4);
+    transform: scale(1.05);
+}
+
+.realm-option {
+    cursor: pointer;
+    padding: 24px;
+    margin: 12px;
+    background: var(--bg-cosmos);
+    border-radius: 12px;
+    border: 1px solid var(--blue-mystic);
+    transition: all 0.3s ease;
+}
+
+.realm-option:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--glow-soft-blue);
+    border-color: var(--blue-ethereal);
+}
+
+.world-tree-container {
+    padding: 40px;
+    text-align: center;
+}
+
+.tree-spirit-container {
+    padding: 30px;
+    margin: 20px 0;
+}
+
+.spirit-visualization {
+    padding: 20px;
+    min-height: 100px;
+}
+
+.leaves {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.leaf {
+    animation: float 3s ease-in-out infinite;
+}
+
+.leaf:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.leaf:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.leaf:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.leaf:nth-child(5) {
+    animation-delay: 2s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.animated-glow {
+    animation: glow 2s infinite alternate ease-in-out;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: var(--glow-soft-blue);
+    }
+    100% {
+        box-shadow: 0 0 24px rgba(96, 165, 250, 0.7), 0 0 36px rgba(96, 165, 250, 0.4);
+    }
+}

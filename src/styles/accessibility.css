@@ -1,0 +1,116 @@
+/* Accessibility Styles */
+
+/* Screen reader only class */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only:focus,
+.sr-only:active {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* Focus visible styles */
+*:focus-visible {
+  outline: 2px solid #67E8F9;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #67E8F9;
+  color: #081225;
+  padding: 8px 16px;
+  text-decoration: none;
+  z-index: 100;
+  border-radius: 0 0 4px 0;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .mythic-border {
+    border-width: 2px;
+    border-color: currentColor;
+  }
+
+  .glass-effect {
+    background-color: rgba(10, 26, 61, 0.95);
+  }
+}
+
+/* Focus indicators for interactive elements */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #67E8F9;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Ensure sufficient color contrast */
+.text-starlight-dim {
+  color: #E9ECEF; /* Ensuring WCAG AA compliance */
+}
+
+/* Keyboard navigation helpers */
+.keyboard-nav *:focus {
+  outline: 2px solid #67E8F9;
+  outline-offset: 2px;
+}
+
+/* Touch target size (minimum 44x44px) */
+button,
+a,
+input[type="checkbox"],
+input[type="radio"] {
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Announcement region for screen readers */
+#mythical-announcer {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
